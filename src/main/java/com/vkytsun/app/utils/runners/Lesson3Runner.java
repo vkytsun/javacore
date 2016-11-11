@@ -8,8 +8,8 @@ import com.vkytsun.app.utils.convertors.PrimitiveConvertor;
 public class Lesson3Runner {
     public static void main(String[] args) {
         PrimitiveConvertor primitiveConvertor = new PrimitiveConvertor();
-        primitiveConvertor.floatToChar();
-        primitiveConvertor.intToChar();
-        primitiveConvertor.charToInt();
+        primitiveConvertor.floatToChar(12f);
+        primitiveConvertor.intToChar(4);
+        primitiveConvertor.charToInt('A');
     }
 }

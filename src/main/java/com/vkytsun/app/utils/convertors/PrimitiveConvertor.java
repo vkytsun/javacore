@@ -4,27 +4,27 @@ package com.vkytsun.app.utils.convertors;
  *
  */
 public class PrimitiveConvertor {
-    char char1 = 11;
-    int int1 = 1000;
-    float float1 = 7777.2323f;
-
+    /**char char1 = '\000';
+    int int1 = 55;
+    float float1 = 56f;
+*/
     public static void main(String[] args) {
         PrimitiveConvertor primitiveConvertor = new PrimitiveConvertor();
-        primitiveConvertor.floatToChar();
-        primitiveConvertor.intToChar();
-        primitiveConvertor.charToInt();
+        primitiveConvertor.floatToChar(22f);
+        primitiveConvertor.intToChar(999);
+        primitiveConvertor.charToInt('A');
     }
-    public void floatToChar() {
-        char1 = (char) float1;
-        System.out.println("Input float value is " + float1 + ". Output value is " + char1);
+    public void floatToChar(float floatVariable) {
+        char charVariable = (char) floatVariable;
+        System.out.println("Input float value is " + floatVariable + ". Output value is " + charVariable);
     }
-    public void intToChar() {
-        char1 = (char) int1;
-        System.out.println("Input int value is " + int1 + ". Output char value is " + char1);
+    public void intToChar(int intVariable) {
+        char charVariable = (char) intVariable;
+        System.out.println("Input int value is " + intVariable + ". Output char value is " + charVariable);
     }
-    public void charToInt() {
-        int1 = char1;
-        System.out.println("Input char value is " + char1 + ". Output int value is " + int1);
+    public void charToInt(char charVariable) {
+        int intVariable = (char) charVariable;
+        System.out.println("Input char value is " + charVariable + ". Output int value is " + intVariable);
     }
 }
 
