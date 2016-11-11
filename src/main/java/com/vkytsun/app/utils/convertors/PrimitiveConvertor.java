@@ -1,6 +1,6 @@
 package com.vkytsun.app.utils.convertors;
 
-/** Вопрос: почему char выводит символы, а не цифры???
+/** Вопрос: какие библиотеки junit используются в автоматизации
  *
  */
 public class PrimitiveConvertor {
@@ -23,7 +23,7 @@ public class PrimitiveConvertor {
         System.out.println("Input int value is " + intVariable + ". Output char value is " + charVariable);
     }
     public void charToInt(char charVariable) {
-        int intVariable = (char) charVariable;
+        int intVariable = (int) charVariable;
         System.out.println("Input char value is " + charVariable + ". Output int value is " + intVariable);
     }
 }
