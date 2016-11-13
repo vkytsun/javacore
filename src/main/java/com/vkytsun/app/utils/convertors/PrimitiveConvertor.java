@@ -12,7 +12,7 @@ public class PrimitiveConvertor {
         PrimitiveConvertor primitiveConvertor = new PrimitiveConvertor();
         primitiveConvertor.floatToChar(22f);
         primitiveConvertor.intToChar(999);
-        primitiveConvertor.charToInt('A');
+        primitiveConvertor.charToInt('B');
     }
     public void floatToChar(float floatVariable) {
         char charVariable = (char) floatVariable;
