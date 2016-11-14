@@ -28,7 +28,4 @@ public class ArithmeticOperationsTest {
         int e = 99, f = 124, expRes = -25;
         Assert.assertEquals(expRes, ArithmeticOperations.subtraction(e, f));
     }
-    public void inkrement() {
-
-    }
-}
+ }
