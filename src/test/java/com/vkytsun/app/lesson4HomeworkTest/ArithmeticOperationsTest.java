@@ -41,7 +41,7 @@ public class ArithmeticOperationsTest {
     }
     @Test
     public void sqrtTest() {
-        double x = 81.0, expRes = 9.0, delta = 72.0;
-        Assert.assertEquals(expRes, ArithmeticOperations.sqrt(x), delta);
+        double x = 81.0, expRes = 9.0;
+        Assert.assertEquals(Double.doubleToLongBits(expRes), Double.doubleToLongBits(ArithmeticOperations.sqrt(x)));
     }
  }
