@@ -16,4 +16,14 @@ public class ArithmeticOperations {
     public static int subtraction(int e, int f) {
         return e - f;
     }
+    public static int min(int x, int y) {
+        return Math.min(x, y);
+    }
+    public static int max(int x, int y, int z) {
+        return Math.max(x, Math.max(y, z));
+    }
+    public static double sqrt(double x) {
+        double result = Math.sqrt(x);
+        return result;
+    }
 }

@@ -6,26 +6,26 @@ package com.vkytsun.app.lesson4Homework;
 public class Car {
     private int priceOfTheCar;
     private String modelOfTheСar;
-    public Car(int a, String Ford) {
-        priceOfTheCar = a;
-        modelOfTheСar = Ford;
+    public Car(int price, String model) {
+        priceOfTheCar = price;
+        modelOfTheСar = model;
     }
     public int getPriceOfTheCar() {
         return priceOfTheCar;
     }
-    public void setPriceOfTheCar(int a) {
-        priceOfTheCar = a;
+    public void setPriceOfTheCar(int price) {
+        priceOfTheCar = price;
     }
     public String getModelOfTheСar() {
         return modelOfTheСar;
     }
-    public void setModelOfTheСar(String Ford) {
-        modelOfTheСar = Ford;
+    public void setModelOfTheСar(String model) {
+        modelOfTheСar = model;
     }
-    public void buy(int a, int discount) {
-        priceOfTheCar = a - discount;
+    public void buy(int price, int discount) {
+        priceOfTheCar = price - discount;
     }
-    public void buyCredit(int a, int percent) {
-        priceOfTheCar = a + percent;
+    public void buyCredit(int price, int percent) {
+        priceOfTheCar = price + percent;
     }
 }
