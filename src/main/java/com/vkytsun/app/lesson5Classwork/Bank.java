@@ -16,7 +16,14 @@ public class Bank {
         System.out.println("Bank name: " + bankName);
     }
     /** из-за того что переменная Final код не скомпилируется
-    public void setUsdRate(float USD_RATE) {
+    public void setUsdRate(float USD_RATE) */
+    public static float getUsdRate() {
+        return USD_RATE;
+    }
+
+    public boolean isLoanCanBeIssued(Person person) {
+        boolean result = false;
+        int score = 0;
         if (person.getAge() >= 18 && person.getAge() < 70) {
             score++;
         }
