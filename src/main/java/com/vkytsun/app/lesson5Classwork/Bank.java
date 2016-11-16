@@ -33,22 +33,22 @@ public class Bank {
         if (person.isWorkFlag()==true) {
             score++;
         }
-        if (person.getSalary()>4000) {
+        if (person.getSalary() > 4000) {
             score++;
         }
         if (person.isFeedbackFlag()) {
             score++;
         }
-        if (person.getWorkingTime()>=2) {
+        if (person.getWorkingTime() >= 2) {
             score++;
         }
 
         System.out.println("Our score: " + score);
 
-        if (score <3 ) {
+        if (score < 3 ) {
             System.out.print("Would your like bind your house? Enter 1 ");
             Scanner sc = new Scanner(System.in);
-                    if (sc.nextInt()==1) { //** считываем с консоли что ввели */
+                    if (sc.nextInt() == 1) { //** считываем с консоли что ввели */
                         return true;
                     }
         }
