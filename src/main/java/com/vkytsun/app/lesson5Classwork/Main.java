@@ -42,6 +42,6 @@ public class Main {
         student.setWorkFlag(true);
         student.setWorkingTime(2);
 
-        System.out.println("Loan accepted: " + privatebank.isLoanCanBeIssued(richMan));
+        System.out.println("Loan accepted: " + privatebank.isLoanCanBeIssued(nishebrod));
     }
 }
