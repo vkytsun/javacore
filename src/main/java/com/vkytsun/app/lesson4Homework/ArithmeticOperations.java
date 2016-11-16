@@ -1,8 +1,6 @@
 package com.vkytsun.app.lesson4Homework;
 
-/**
- * Created by vkytsun on 11/14/16.
- */
+
 public class ArithmeticOperations {
     public static int multiply(int a, int b) {
         return a * b;
