@@ -3,7 +3,6 @@ package com.vkytsun.app.lesson4HomeworkTest;
 import com.vkytsun.app.lesson4Homework.ArithmeticOperations;
 import org.junit.Assert;
 import org.junit.Test;
-import sun.security.x509.DeltaCRLIndicatorExtension;
 
 /**
  * Created by vkytsun on 11/14/16.
@@ -43,5 +42,24 @@ public class ArithmeticOperationsTest {
     public void sqrtTest() {
         double x = 81.0, expRes = 9.0;
         Assert.assertEquals(Double.doubleToLongBits(expRes), Double.doubleToLongBits(ArithmeticOperations.sqrt(x)));
+    }
+    @Test
+    public void checkNullTest() {
+        int a = 11, b = 4, expRes = 44;
+        Assert.assertNotNull(expRes);
+    }
+    @Test
+    public void checkTrueTest() {
+        Assert.assertFalse("not same", false);
+    }
+    @Test
+    public void inkrementTest() {
+        int h = 10, k = 5, expRes = 16;
+        Assert.assertEquals(expRes, ArithmeticOperations.inkrement(h, k));
+    }
+    @Test
+    public void dekrementTest() {
+        int m = 20, n = 8, expRes = 13;
+        Assert.assertEquals(expRes, ArithmeticOperations.dekrement(m, n));
     }
  }

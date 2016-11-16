@@ -26,4 +26,16 @@ public class ArithmeticOperations {
         double result = Math.sqrt(x);
         return result;
     }
+    public static int checkNull(int a, int b) {
+        return a * b;
+    }
+    public static boolean checkTrue(boolean man, boolean women) {
+        return false;
+    }
+    public static int inkrement(int h, int k) {
+        return h++ + ++k;
+    }
+    public static int dekrement(int m, int n) {
+        return m-- - --n;
+    }
 }
