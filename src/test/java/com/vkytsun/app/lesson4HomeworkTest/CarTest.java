@@ -1,6 +1,6 @@
 package com.vkytsun.app.lesson4HomeworkTest;
 
-import com.vkytsun.app.lesson4Homework.Car;
+import com.vkytsun.app.homework.lesson4.Car;
 import org.junit.Assert;
 import org.junit.Test;
 

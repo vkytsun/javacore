@@ -1,4 +1,4 @@
-package com.vkytsun.app.utils.runners.homework;
+package com.vkytsun.app.utils.runners.homework.lesson5Runner;
 
 import com.vkytsun.app.lesson5Homework.CircleArea;
 import com.vkytsun.app.lesson5Homework.MainCircle;

@@ -1,4 +1,4 @@
-package com.vkytsun.app.lesson4Homework;
+package com.vkytsun.app.homework.lesson4;
 
 /**
  * Created by vkytsun on 14.11.16.

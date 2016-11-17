@@ -1,4 +1,4 @@
-package com.vkytsun.app.lesson5Classwork;
+package com.vkytsun.app.classwork.lesson5;
 
 public class Person {
     private int age, workingTime;
