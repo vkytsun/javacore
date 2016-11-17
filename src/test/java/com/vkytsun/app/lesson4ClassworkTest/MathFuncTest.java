@@ -1,6 +1,6 @@
 package com.vkytsun.app.lesson4ClassworkTest;
 
-import com.vkytsun.app.lesson4Classwork.MathFunc;
+import com.vkytsun.app.classwork.lesson4.MathFunc;
 import org.junit.Assert;
 import org.junit.Test;
 

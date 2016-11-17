@@ -1,4 +1,4 @@
-package com.vkytsun.app.lesson4Homework;
+package com.vkytsun.app.homework.lesson4;
 
 
 public class ArithmeticOperations {

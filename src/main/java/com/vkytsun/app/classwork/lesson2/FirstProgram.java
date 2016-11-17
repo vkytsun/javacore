@@ -1,4 +1,4 @@
-package main.java.com.vkytsun.app.lesson2;
+package main.java.com.vkytsun.app.classwork.lesson2;
 
 import java.util.Scanner;
 

@@ -17,8 +17,14 @@ public class CircleRadius {
         System.out.println("Please enter pi value");
         double pi = scanner.nextDouble();
 
-        double circleArea = pi * radius * radius;
+        //double circleArea = pi * radius * radius;
         //Circumference = 2*PI*radius
+      //  System.out.println("Area is " + circleArea%1000);
+        culcCircleArea(pi,radius);
+    }
+
+    public static void culcCircleArea(double pi, double radius){
+        double circleArea = pi * radius * radius;
         System.out.println("Area is " + circleArea%1000);
     }
  }

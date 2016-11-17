@@ -1,4 +1,4 @@
-package com.vkytsun.app.utils.runners.homework;
+package com.vkytsun.app.utils.runners.homework.lesson5Runner;
 
 /**
  * Created by vkytsun on 11/16/16.
