@@ -7,8 +7,6 @@ public class MainCircle {
     public static void main(String[] args) {
         /* CircleRadius circleRadius = new CircleRadius();
         CircleRadius.calculate(); */
-        CircleRadius circleRadius = new CircleRadius();
-        /* CircleRadius.calculate(); */
         CircleArea.calculateBigger();
     }
 }
