@@ -8,12 +8,13 @@ public class PrimitiveConvertor {
     int int1 = 55;
     float float1 = 56f;
 */
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         PrimitiveConvertor primitiveConvertor = new PrimitiveConvertor();
         primitiveConvertor.floatToChar(22f);
         primitiveConvertor.intToChar(999);
         primitiveConvertor.charToInt('B');
     }
+    */
     public void floatToChar(float floatVariable) {
         char charVariable = (char) floatVariable;
         System.out.println("Input float value is " + floatVariable + ". Output value is " + charVariable);
