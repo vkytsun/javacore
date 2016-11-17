@@ -1,4 +1,4 @@
-package com.vkytsun.app.lesson4HomeworkTest;
+package com.vkytsun.app.homeworkTest.lesson4;
 
 import com.vkytsun.app.homework.lesson4.Car;
 import org.junit.Assert;

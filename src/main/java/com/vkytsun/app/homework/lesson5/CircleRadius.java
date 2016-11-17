@@ -12,7 +12,7 @@ public class CircleRadius {
         /*We are storing the entered radius in double
        * because a user can enter radius in decimals
        */
-        double radius = scanner.nextDouble();
+        double r = scanner.nextDouble();
         //Area = PI*radius*radius
         System.out.println("Please enter pi value");
         double pi = scanner.nextDouble();
@@ -20,11 +20,11 @@ public class CircleRadius {
         //double circleArea = pi * radius * radius;
         //Circumference = 2*PI*radius
       //  System.out.println("Area is " + circleArea%1000);
-        calcCircleArea(pi,radius);
+        calcCircleArea(pi,r);
     }
 
-    public static double calcCircleArea(double pi, double radius){
-        double circleArea = pi * radius * radius;
+    public static double calcCircleArea(double pi, double r){
+        double circleArea = pi * r * r;
         System.out.println("Area is " + circleArea%1000);
         return circleArea;
     }
