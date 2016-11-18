@@ -12,6 +12,8 @@ public class Menu {
         System.out.println("2. Comparison two circles area.");
         System.out.println("3. Calculation sides of right-angled triangle.");
         System.out.println("4. Define if number even or odd");
+        System.out.println("5. Exit");
+
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
 
@@ -32,9 +34,15 @@ public class Menu {
                     if (a == 4) {
                         EvenOdd.defineEvenOdd();
                     } else {
-                        System.out.println("incorrect number. Please, try again.");
+                        if (a == 5) {
+                            System.out.println("Cood bye!");
+                        }
+                        else {
+                            System.out.println("incorrect number. Please, try again.");
+                        }
                     }
                 }
+
             }
         }
         return a;

@@ -17,9 +17,9 @@ public class CircleArea {
         System.out.println("Please enter circle radius2");
         double r2 = scanner2.nextInt();
 
-        calculateBiggerArrea(r1, r2);
+        calcBiggerArrea(r1, r2);
     }
-    public static double calculateBiggerArrea(double r1, double r2) {
+    public static double calcBiggerArrea(double r1, double r2) {
         double circleArea1 = PI * r1 * r1;
         double circleArea2 = PI * r2 * r2;
         if (circleArea1 > circleArea2) {
