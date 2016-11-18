@@ -13,13 +13,16 @@ public class JunitLesson5Test {
     @Test
     public void calcCircleArea() {
         double pi = 3.14, r = 8, expRes = 200.96;
-        Assert.assertEquals(Double.doubleToLongBits(expRes), Double.doubleToLongBits(CircleRadius.calcCircleArea(pi,r)));
-
+        double actualResult = CircleRadius.calcCircleArea(pi,r);
+        Assert.assertEquals(Double.doubleToLongBits(expRes), Double.doubleToLongBits(actualResult));
     }
     @Test
     public void calcBigger() {
         double pi = 3.14, r1 = 10, r2 = 15;
-        Assert.assertNotEquals(Double.doubleToLongBits(r1), Double.doubleToLongBits(CircleArea.calculateBiggerArrea(r1,r2)));
+        double actualResult1 = CircleRadius.calcCircleArea(pi, r1);
+        double actualResult2 = CircleRadius.calcCircleArea(pi, r2);
+        Assert.assertNotEquals(Double.doubleToLongBits(r1), Double.doubleToLongBits(actualResult1));
+        Assert.assertNotEquals(Double.doubleToLongBits(r2), Double.doubleToLongBits(actualResult2));
     }
     @Test
     public void PythagoreanTheorem() {

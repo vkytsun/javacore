@@ -2,9 +2,6 @@ package com.vkytsun.app.homework.lesson5;
 
 import java.util.Scanner;
 
-/**
- * Created by vkytsun on 11/16/16.
- */
 public class CircleRadius {
     public static void calculate(){
         Scanner scanner = new Scanner(System.in);
