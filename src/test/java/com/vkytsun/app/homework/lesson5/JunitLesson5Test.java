@@ -1,26 +1,27 @@
-package com.vkytsun.app.homeworkTest.lesson5;
+package com.vkytsun.app.homework.lesson5;
 
 import com.vkytsun.app.homework.lesson5.CircleArea;
 import com.vkytsun.app.homework.lesson5.CircleRadius;
 import com.vkytsun.app.homework.lesson5.EvenOdd;
 import com.vkytsun.app.homework.lesson5.RightAngledTriangle;
 import org.junit.Assert;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 
-/**
- * Created by vkytsun on 18.11.16.
- */
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+
 public class JunitLesson5Test {
     @Test
-    public void calcCircleArea() {
+    public void calcCircleAreaEquals() {
         double pi = 3.14, r = 8, expRes = 200.96;
         double actualResult = CircleRadius.calcCircleArea(pi,r);
         Assert.assertEquals(Double.doubleToLongBits(expRes), Double.doubleToLongBits(actualResult));
     }
     @Test
-    public void calcCircleAreуa() {
+    public void calcCircleAreaNull() {
         double pi = 3.14, r = 8, expRes = 200.96;
-        double actualResult = CircleRadius.calcCircleArea(pi,r);
+            double actualResult = CircleRadius.calcCircleArea(pi,r);
         Assert.assertNotNull(actualResult);
     }
     @Test
@@ -40,19 +41,19 @@ public class JunitLesson5Test {
         Assert.assertNotEquals(expRes2, actualResult2, 1e-5);
     }
     @Test
-    public void PythagoreanTheoremEquals() {
+    public void pythagoreanTheoremEquals() {
         double a = 3, b = 4, c = 5;
         double actualResult = RightAngledTriangle.PythagoreanTheorem(a, b);
         Assert.assertEquals(Double.doubleToLongBits(c), Double.doubleToLongBits(actualResult));
     }
     @Test
-    public void PythagoreanTheoremNotEquals() {
+    public void pythagoreanTheoremNotEquals() {
         double a = 3, b = 4, c = 8;
         double actualResult = RightAngledTriangle.PythagoreanTheorem(a, b);
         Assert.assertNotEquals(Double.doubleToLongBits(c), Double.doubleToLongBits(actualResult));
     }
     @Test
-    public void EvenOdd() {
+    public void evenOdd() {
         int x = 5;
         int actualResult = EvenOdd.defEvenOdd(x);
         Assert.assertEquals(x, actualResult);
