@@ -14,9 +14,9 @@ public class EvenOdd {
     public static int defEvenOdd(int x) {
         int y = x;
         if (x % 2 == 0) {
-            System.out.println("You entered even number");
+            System.out.println("You entered even number.");
         } else {
-            System.out.println("You entered odd number");
+            System.out.println("You entered odd number.");
         }
         return x;
     }

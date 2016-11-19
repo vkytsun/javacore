@@ -2,35 +2,27 @@ package com.vkytsun.app.homework.lesson5;
 
 import java.util.Scanner;
 
-/**
- * Created by vkytsun on 11/16/16.
- */
 public class CircleArea {
-        public static final double PI = 3.14d;
+    public static void calculate(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter circle radius ");
+        /*We are storing the entered radius in double
+       * because a user can enter radius in decimals
+       */
+        double r = scanner.nextDouble();
+        //Area = PI*radius*radius
+        System.out.println("Please enter pi value");
+        double pi = scanner.nextDouble();
 
-    public static void calculateBigger() {
-        Scanner scanner1 = new Scanner(System.in);
-        System.out.println("Please enter circle radius1 ");
-        double r1 = scanner1.nextInt();
-
-        Scanner scanner2 = new Scanner(System.in);
-        System.out.println("Please enter circle radius2");
-        double r2 = scanner2.nextInt();
-
-        calcBiggerArrea(r1, r2);
+        //double circleArea = pi * radius * radius;
+        //Circumference = 2*PI*radius
+      //  System.out.println("Area is " + circleArea%1000);
+        calcCircleArea(pi,r);
     }
-    public static double calcBiggerArrea(double r1, double r2) {
-        double circleArea1 = PI * r1 * r1;
-        double circleArea2 = PI * r2 * r2;
-        if (circleArea1 > circleArea2) {
-            System.out.println("Area1 is bigger ");
-            System.out.println("Area2 is smaller ");
-        return circleArea1;
-        }
-        else {
-            System.out.println("Area2 is bigger ");
-            System.out.println("Area1 is smaller ");
-        }
-        return circleArea2;
+
+    public static double calcCircleArea(double pi, double r){
+        double circleArea = pi * r * r;
+        System.out.println("Area is " + circleArea%1000);
+        return circleArea;
     }
-}
+ }

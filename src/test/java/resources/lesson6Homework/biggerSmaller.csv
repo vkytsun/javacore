@@ -1,0 +1,4 @@
+ArgumentA, ArgumentA, expectedResult
+99,-99,99
+-1,4,4
+8,8,8
