@@ -54,4 +54,10 @@ public class JunitLesson5Test {
         int actualResult = EvenOdd.defEvenOdd(x);
         Assert.assertEquals(x, actualResult);
     }
+    @Test
+    public void biggerNumber() {
+        int a = -23, b = 23;
+        int actualResult = BiggerNumber.calcBiggerNumber(a,b);
+        Assert.assertEquals(b, actualResult);
+    }
 }

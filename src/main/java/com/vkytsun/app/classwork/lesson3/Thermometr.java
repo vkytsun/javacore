@@ -1,8 +1,5 @@
 package com.vkytsun.app.classwork.lesson3;
 
-/**
- * Created by vkytsun on 08.11.16.
- */
 public class Thermometr {
     public static void main(String[] args) {
         int sensor = - 129;

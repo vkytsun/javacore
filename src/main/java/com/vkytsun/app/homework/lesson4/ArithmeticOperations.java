@@ -8,11 +8,13 @@ public class ArithmeticOperations {
     public static int division(int a, int b) {
         return a / b;
     }
-    public static int addition(int c, int d) {
-        return c - d;
+    public static int addition(int a, int b) {
+        System.out.println("Addition of two numbers is " + (a + b));
+        return a + b;
     }
-    public static int subtraction(int e, int f) {
-        return e - f;
+    public static int subtraction(int a, int b) {
+        System.out.println("Subtraction of two numbers is " + (a - b));
+        return a - b;
     }
     public static int min(int x, int y) {
         return Math.min(x, y);
@@ -22,6 +24,7 @@ public class ArithmeticOperations {
     }
     public static double sqrt(double x) {
         double result = Math.sqrt(x);
+        System.out.println("sqrt is " + result);
         return result;
     }
     public static int checkNull(int a, int b) {

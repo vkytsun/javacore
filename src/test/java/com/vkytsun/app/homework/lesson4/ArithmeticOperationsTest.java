@@ -4,9 +4,6 @@ import com.vkytsun.app.homework.lesson4.ArithmeticOperations;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * Created by vkytsun on 11/14/16.
- */
 public class ArithmeticOperationsTest {
     @Test
     public void multiplyTest() {
@@ -20,13 +17,13 @@ public class ArithmeticOperationsTest {
     }
     @Test
     public void additionTest() {
-        int c = 50, d = 32, expRes = 18;
-        Assert.assertEquals(expRes, ArithmeticOperations.addition(c, d));
+        int a = 50, b = 32, expRes = 82;
+        Assert.assertEquals(expRes, ArithmeticOperations.addition(a, b));
     }
     @Test
     public void subtractionTest() {
-        int e = 99, f = 124, expRes = -25;
-        Assert.assertEquals(expRes, ArithmeticOperations.subtraction(e, f));
+        int a = 99, b = 124, expRes = -25;
+        Assert.assertEquals(expRes, ArithmeticOperations.subtraction(a, b));
     }
     @Test
     public void minTest() {
