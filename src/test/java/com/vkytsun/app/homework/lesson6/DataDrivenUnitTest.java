@@ -69,6 +69,7 @@ public class DataDrivenUnitTest {
         double actualResult = ArithmeticOperations.sqrt(x);
         Assert.assertEquals(expectedResult, actualResult, 1e-5);
     }
+
     @Test
     @FileParameters(value = "src/test/java/resources/homework/lesson6/pow.csv", mapper = CsvWithHeaderMapper.class)
     public void pow(double x, double y, double expectedResult) {
