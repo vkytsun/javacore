@@ -11,30 +11,38 @@ public class JunitLesson5Test {
     @Test
     public void calcCircleAreaEquals() {
         double pi = 3.14, r = 8, expRes = 200.96;
-        double actualResult = CircleArea.calcCircleArea(pi,r);
+        double actualResult = CircleArea.calcCircleArea(r);
         Assert.assertEquals(Double.doubleToLongBits(expRes), Double.doubleToLongBits(actualResult));
+    }
+    @Test
+    public void calcCircleAreaFalse() {
+        double PI = 3.14, r = 10, circleArea = 314;
+        double actualResult = CircleArea.calcCircleArea(r);
+        Assert.assertFalse(circleArea == 1000);
     }
     @Test
     public void calcCircleAreaNull() {
         double pi = 3.14, r = 8, expRes = 200.96;
-            double actualResult = CircleArea.calcCircleArea(pi,r);
+            double actualResult = CircleArea.calcCircleArea(r);
         Assert.assertNotNull(actualResult);
     }
     @Test
     public void checkAreaEquals() {
-        double pi = 3.14, r1 = 1, r2 = 10, expRes1 = 3.140, expRes2 = 314.0 ;
-        double actualResult1 = CircleArea.calcCircleArea(pi, r1);
-        double actualResult2 = CircleArea.calcCircleArea(pi, r2);
-        Assert.assertEquals(expRes1, actualResult1, 1e-5);
-        Assert.assertEquals(expRes2, actualResult2, 1e-5);
+        double PI = 3.14d, r1 = 1, r2 = 10, circleArea2 = 314.0 ;
+        double actualResult = CircleArea.calcBiggerArea(r1,r2);
+        Assert.assertEquals(circleArea2, actualResult, 1e-5);
     }
     @Test
-    public void checkAreaNotEquals() {
-        double pi = 3.14, r1 = 11, r2 = 16, expRes1 = 314, expRes2 = 706.5;
-        double actualResult1 = CircleArea.calcCircleArea(pi, r1);
-        double actualResult2 = CircleArea.calcCircleArea(pi, r2);
-        Assert.assertNotEquals(expRes1, actualResult1, 1e-5);
-        Assert.assertNotEquals(expRes2, actualResult2, 1e-5);
+    public void calcBiggerAreaFalse1() {
+        double PI = 3.14d, r1 = 100, r2 = 11, circleArea1 = 31400;
+        double actual3 = CircleArea.calcBiggerArea(r1,r2);
+        Assert.assertFalse(circleArea1 == 12326);
+    }
+    @Test
+    public void calcBiggerAreaFalse2() {
+        double PI = 3.14d, r1 = 10, r2 = 1, circleArea2 = 314;
+        double actual3 = CircleArea.calcBiggerArea(r1,r2);
+        Assert.assertFalse(circleArea2 == 200);
     }
     @Test
     public void pythagoreanTheoremEquals() {
@@ -51,13 +59,20 @@ public class JunitLesson5Test {
     @Test
     public void evenOdd() {
         int x = 5;
-        int actualResult = EvenOdd.defEvenOdd(x);
+        int actualResult = DefineNumber.defEvenOdd(x);
         Assert.assertEquals(x, actualResult);
     }
     @Test
     public void biggerNumber() {
         int a = -23, b = 23;
-        int actualResult = BiggerNumber.calcBiggerNumber(a,b);
+        int actualResult = DefineNumber.defBiggerNumber(a,b);
         Assert.assertEquals(b, actualResult);
+    }
+    @Test
+    public void biggerNumberNotEquals() {
+        int a = 123, b = 230;
+        int actualResult = DefineNumber.defBiggerNumber(a,b);
+        int expectedResul = a;
+        Assert.assertNotEquals(expectedResul, actualResult);
     }
 }

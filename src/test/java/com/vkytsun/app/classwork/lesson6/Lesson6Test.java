@@ -14,8 +14,6 @@ public class Lesson6Test {
     @FileParameters(value = "src/test/java/resources/classwork/lesson6/testdata.csv", mapper = CsvWithHeaderMapper.class)
     public void parametrizedTest(int a, int b, int c) {
         Assert.assertEquals(a*b, c);
-
-
     }
 }
 

@@ -27,6 +27,11 @@ public class ArithmeticOperations {
         System.out.println("sqrt is " + result);
         return result;
     }
+    public static double pow(double x, double y) {
+        double result = Math.pow(x, y);
+        System.out.println("pow is " + result);
+        return result;
+    }
     public static int checkNull(int a, int b) {
         return a * b;
     }

@@ -16,15 +16,15 @@ import org.junit.runners.MethodSorters;
 public class DataDrivenUnitTest {
     @Test
     @FileParameters(value = "src/test/java/resources/homework/lesson6/circleArea.csv", mapper = CsvWithHeaderMapper.class)
-    public void calculateCircleArea(double pi, double r, double circleArea) {
-        double actualResult = CircleArea.calcCircleArea(pi,r);
+    public void calculateCircleArea(double r, double circleArea) {
+        double actualResult = CircleArea.calcCircleArea(r);
         Assert.assertEquals(circleArea, actualResult, 1e-5);
     }
 
     @Test
     @FileParameters(value = "src/test/java/resources/homework/lesson6/circleAreaBigger.csv", mapper = CsvWithHeaderMapper.class)
     public void calculateCircleAreaBigger(double r1, double r2, double circleArea) {
-        double actualResult = CircleAreaBigger.calcBiggerArrea(r1, r2);
+        double actualResult = CircleArea.calcBiggerArea(r1, r2);
         Assert.assertEquals(circleArea, actualResult, 1e-4);
     }
 
@@ -37,16 +37,16 @@ public class DataDrivenUnitTest {
 
     @Test
     @FileParameters(value = "src/test/java/resources/homework/lesson6/evenOdd.csv", mapper = CsvWithHeaderMapper.class)
-    public void defEvenOdd(int z, int x) {
-        int actualResult = EvenOdd.defEvenOdd(x);
-        Assert.assertEquals(z, actualResult);
+    public void defEvenOdd(int x, int expectedResult) {
+        int actualResult = DefineNumber.defEvenOdd(x);
+        Assert.assertEquals(expectedResult, actualResult);
     }
 
     @Test
     @FileParameters(value = "src/test/java/resources/homework/lesson6/biggerSmaller.csv", mapper = CsvWithHeaderMapper.class)
-    public void defBiggerSmaller(int a, int b, int c) {
-        int actualResult = BiggerNumber.calcBiggerNumber(a, b);
-        Assert.assertEquals(c, actualResult);
+    public void defBiggerSmaller(int a, int b, int expectedResult) {
+        int actualResult = DefineNumber.defBiggerNumber(a, b);
+        Assert.assertEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -65,9 +65,15 @@ public class DataDrivenUnitTest {
 
     @Test
     @FileParameters(value = "src/test/java/resources/homework/lesson6/sqrt.csv", mapper = CsvWithHeaderMapper.class)
-    public void sqrt(double x, double y) {
+    public void sqrt(double x, double expectedResult) {
         double actualResult = ArithmeticOperations.sqrt(x);
-        Assert.assertEquals(y, actualResult, 1e-5);
+        Assert.assertEquals(expectedResult, actualResult, 1e-5);
+    }
+    @Test
+    @FileParameters(value = "src/test/java/resources/homework/lesson6/pow.csv", mapper = CsvWithHeaderMapper.class)
+    public void pow(double x, double y, double expectedResult) {
+        double actualResult = ArithmeticOperations.pow(x,y);
+        Assert.assertEquals(expectedResult, actualResult, 1e-5);
     }
 
 }

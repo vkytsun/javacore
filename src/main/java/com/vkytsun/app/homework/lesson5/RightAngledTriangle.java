@@ -6,14 +6,7 @@ import java.util.Scanner;
  * Created by vkytsun on 11/17/16.
  */
 public class RightAngledTriangle {
-    public static void calculateTriangle() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter cathenus length А ");
-        double A = scanner.nextDouble();
-        System.out.println("Please enter cathenus length B ");
-        double B = scanner.nextDouble();
-        pythagoreanTheorem(A, B);
-    }
+
     public static double pythagoreanTheorem(double A, double B) {
         double C = Math.sqrt(A * A + B * B);
         if (C > A && C > B && A > 0 && B > 0) {
@@ -33,5 +26,4 @@ public class RightAngledTriangle {
         }
         return C;
     }
-
 }

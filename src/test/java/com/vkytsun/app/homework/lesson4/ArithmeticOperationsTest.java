@@ -41,6 +41,11 @@ public class ArithmeticOperationsTest {
         Assert.assertEquals(Double.doubleToLongBits(expRes), Double.doubleToLongBits(ArithmeticOperations.sqrt(x)));
     }
     @Test
+    public void powTest() {
+        double x = 5, y = 3, expRes = 125;
+        Assert.assertEquals(expRes, ArithmeticOperations.pow(x,y), 1e-5);
+    }
+    @Test
     public void checkNullTest() {
         int a = 11, b = 4, expRes = 44;
         Assert.assertNotNull(expRes);

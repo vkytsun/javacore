@@ -1,4 +1,4 @@
-package com.vkytsun.app.utils.runners.homework.lesson3Runner.lesson5Runner;
+package com.vkytsun.app.utils.runners.homework.lesson5Runner.lesson5Runner;
 
 import com.vkytsun.app.homework.lesson5.Menu;
 
