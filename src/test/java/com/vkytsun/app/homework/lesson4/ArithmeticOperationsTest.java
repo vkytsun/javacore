@@ -6,6 +6,11 @@ import org.junit.Test;
 
 public class ArithmeticOperationsTest {
     @Test
+    public void ArithmeticOperationsClass() {
+        ArithmeticOperations operation = new ArithmeticOperations();
+    }
+
+        @Test
     public void multiplyTest() {
         int a = 11, b = 3, expRes = 33;
         Assert.assertEquals(expRes, ArithmeticOperations.multiply(a, b));

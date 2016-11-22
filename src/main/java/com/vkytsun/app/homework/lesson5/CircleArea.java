@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class CircleArea {
     public static final double PI = 3.14d;
-
     public static double calcCircleArea(double r){
         double circleArea = PI * r * r;
         System.out.println("Area is " + circleArea%1000);

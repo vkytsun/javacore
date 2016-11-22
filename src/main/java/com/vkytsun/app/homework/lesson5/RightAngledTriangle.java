@@ -2,9 +2,7 @@ package com.vkytsun.app.homework.lesson5;
 
 import java.util.Scanner;
 
-/**
- * Created by vkytsun on 11/17/16.
- */
+
 public class RightAngledTriangle {
 
     public static double pythagoreanTheorem(double A, double B) {

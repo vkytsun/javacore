@@ -11,6 +11,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
 
+//mapper = CsvWithHeaderMapper - пропускает первую строку
+
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 @RunWith(JUnitParamsRunner.class)
 public class DataDrivenUnitTest {

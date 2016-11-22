@@ -9,6 +9,12 @@ import org.junit.runners.MethodSorters;
 
 public class JunitLesson5Test {
     @Test
+    public void lesson5Class() {
+        CircleArea circle = new CircleArea();
+        DefineNumber number = new DefineNumber();
+        RightAngledTriangle triangle = new RightAngledTriangle();
+    }
+    @Test
     public void calcCircleAreaEquals() {
         double pi = 3.14, r = 8, expRes = 200.96;
         double actualResult = CircleArea.calcCircleArea(r);
