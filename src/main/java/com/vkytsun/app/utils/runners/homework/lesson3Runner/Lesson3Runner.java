@@ -1,4 +1,4 @@
-package com.vkytsun.app.utils.runners.lesson3Runner;
+package com.vkytsun.app.utils.runners.homework.lesson3Runner;
 
 import com.vkytsun.app.utils.convertors.PrimitiveConvertor;
 

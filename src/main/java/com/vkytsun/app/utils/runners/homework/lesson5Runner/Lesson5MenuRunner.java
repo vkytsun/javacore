@@ -1,4 +1,4 @@
-package com.vkytsun.app.utils.runners.homework.lesson5Runner.Lesson5MenuRunner;
+package com.vkytsun.app.utils.runners.homework.lesson5Runner;
 
 import com.vkytsun.app.homework.lesson5.CircleArea;
 import com.vkytsun.app.homework.lesson5.DefineNumber;
