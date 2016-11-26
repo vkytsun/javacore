@@ -5,23 +5,41 @@ import java.util.Scanner;
 
 public class RightAngledTriangle {
 
-    public static double pythagoreanTheorem(double A, double B) {
-        double C = Math.sqrt(A * A + B * B);
-        if (C > A && C > B && A > 0 && B > 0) {
-            System.out.println("Hypotenuse of right-angled triangle is: " + C%1000);
-        } else {
-            if (A <= 0 && B <= 0) {
-                System.out.println("Incorrect values of cathenus lengthes A and B");
-            } else {
-                if (A <= 0) {
-                    System.out.println("Incorrect value cathenus length A");
-                } else {
-                    if (B <= 0 ){
-                        System.out.println("Incorrect value cathenus length B");
-                    }
+    public static double checkRightAngledTriangle(double a, double b, double c) {
+        if (a > 0 && b > 0 && c > 0) {
+            if (a > b && a > c) {
+                if (a == Math.sqrt(b * b + c * c)) {
+                    System.out.println("Triangle is right-angled.");
+                    return a;
+                } else
+                    System.out.println("It is not right-angled triangle.");
+                return a;
+            }
+            else {
+            if (b > a && b > c) {
+                if (b == Math.sqrt(a * a + c * c)) {
+                    System.out.println("Triangle is right-angled.");
+                    return b;
+                } else
+                    System.out.println("It is not right-angled triangle.");
+                return b;
+            }
+            else {
+                if ( c > a && c > b) {
+                    if (c == Math.sqrt(a * a + b * b)) {
+                        System.out.println("Triangle is right-angled.");
+                        return c;
+                    } else
+                        System.out.println("It is not right-angled triangle.");
+                    return c;
+                } else
+                    System.out.println("It is not right-angled triangle.");
+                return 0;
                 }
             }
         }
-        return C;
+        else
+            System.out.println("You entered incorrect values. Triangle is not right-angled.");
+        return 0;
     }
 }

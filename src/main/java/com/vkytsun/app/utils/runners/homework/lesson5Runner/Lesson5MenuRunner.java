@@ -24,11 +24,13 @@ public class Lesson5MenuRunner {
     }
     public static void calculateTriangle() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter cathenus length А. ");
-        double A = scanner.nextDouble();
-        System.out.println("Please enter cathenus length B. ");
-        double B = scanner.nextDouble();
-        RightAngledTriangle.pythagoreanTheorem(A, B);
+        System.out.println("Please enter length of side a. ");
+        double a = scanner.nextDouble();
+        System.out.println("Please enter length of side b. ");
+        double b = scanner.nextDouble();
+        System.out.println("Please enter length of side c ");
+        double c = scanner.nextDouble();
+        RightAngledTriangle.checkRightAngledTriangle(a, b, c);
     }
     public static void defineEvenOdd() {
         System.out.println("Enter number to define even or odd. ");
@@ -51,29 +53,29 @@ public class Lesson5MenuRunner {
             System.out.println("\nPlease, enter the number to choose the task for the application:");
             System.out.println("1. Calculation circle area.");
             System.out.println("2. Comparison two circles area.");
-            System.out.println("3. Calculation sides of right-angled triangle.");
+            System.out.println("3. Right-angled triangle.");
             System.out.println("4. Define what an number is even/odd.");
             System.out.println("5. Define what an number is bigger/smaller.");
             System.out.println("0. Exit\n");
 
             Scanner scanner = new Scanner(System.in);
-            int a = scanner.nextInt();
-            if (a == 1) {
+            int inputNumber = scanner.nextInt();
+            if (inputNumber == 1) {
                 calculateArea();
-            } else if (a == 2) {
+            } else if (inputNumber == 2) {
                 calculateBiggerArea();
-            } else if (a == 3) {
+            } else if (inputNumber == 3) {
                 calculateTriangle();
-            } else if (a == 4) {
+            } else if (inputNumber == 4) {
                 defineEvenOdd();
-            } else if (a == 5) {
+            } else if (inputNumber == 5) {
                 defineBiggerNumber();
             }
-            else if (a == 0) {
+            else if (inputNumber == 0) {
                 System.out.println("Cood bye!");
             } else
                 System.out.println("Incorrect number. Please, try again.");
-            number = a;
+            number = inputNumber;
         } while (number != 0);
     }
 }
