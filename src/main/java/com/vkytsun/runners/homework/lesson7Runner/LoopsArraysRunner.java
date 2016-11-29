@@ -16,6 +16,7 @@ public class LoopsArraysRunner {
             System.out.println("3. Random numbers of an array[0-9].");
             System.out.println("4. Min/Max numbers of an array[0-999].");
             System.out.println("5. Multi-dimension array[8][5].");
+            System.out.println("6. Right side format of a multi-dimension array[8][5].");
             System.out.println("0. Exit.");
             Scanner scanner = new Scanner(System.in);
             int inputNumber = scanner.nextInt();
@@ -29,6 +30,8 @@ public class LoopsArraysRunner {
                 RandomNumbersArray.randomNumberMinMaxArray();
             } else if (inputNumber == 5) {
                 RandomNumbersArray.multiDimensionArray();
+            } else if (inputNumber == 6) {
+                RandomNumbersArray.rightSideFormatArray();
             } else if (inputNumber == 0) {
                 System.out.println("Good bye!");
             }

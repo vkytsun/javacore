@@ -53,4 +53,15 @@ public class RandomNumbersArray {
             System.out.println(Arrays.toString(randomArray[i]));
         }
     }
+    public static void rightSideFormatArray() {
+        int[][] randomArray = new int[8][5];
+        System.out.println("\nMulti-dimension array[8][5] is: ");
+        for (int i = 0; i < randomArray.length; i++) {
+            for (int j = 0; j < randomArray[i].length; j++) {
+                randomArray[i][j] = 1 + new Random().nextInt(999);
+                // not format yet by right side
+                System.out.println(randomArray[i][j]);
+            }
+        }
+    }
 }
