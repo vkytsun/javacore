@@ -5,27 +5,23 @@ import java.util.Arrays;
 
 public class EvenOddNumbersArray {
     public static void evenNumbersArray() {
-        int a = 0;
         int[] evenArray = new int[10];
         System.out.println("Even numbers of an array[2-20] into a string are: " );
-        for (int i = 2; i <= 20; i+=2) {
-            evenArray[a] = i;
-            System.out.print(evenArray[a] + " ");
+        for (int i = 2, a = 0; i <= 20; i++) {
+            if (i % 2 == 0) {
+                evenArray[a] = i;
+                 a++;
+            }
         }
-        //all even numbers in one string - not working
-        /*for (int arrElement : evenArray) {
-            System.out.println(arrElement + " ");
-        }
-        //each number in new line - not working
+        //all even numbers in one string
         for (int arrElement : evenArray) {
-            System.out.println("\n" + arrElement);
-        }*/
-        System.out.println("\nEven numbers of an array[2-20] into a column are: ");
-        for (int i = 2; i <= 20; i+=2) {
-            evenArray[a] = i;
-            System.out.println(evenArray[a]);
+            System.out.print(arrElement + " ");
         }
-
+        //each number in new line
+        System.out.println("\nEven numbers of an array[2-20] into a column are: ");
+        for (int arrElement : evenArray) {
+            System.out.println(arrElement);
+        }
     }
     public static void oddNumbersArray() {
         int a = 0;
@@ -40,7 +36,6 @@ public class EvenOddNumbersArray {
             oddArray[a] = i;
             System.out.println(oddArray[a]);
         }
-
     }
 }
 
