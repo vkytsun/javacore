@@ -33,7 +33,7 @@ public class LoopsArraysRunner {
             } else if (inputNumber == 6) {
                 RandomNumbersArray.rightSideFormatArray();
             } else if (inputNumber == 7) {
-                RandomNumbersArray.numbers();
+                RandomNumbersArray.addNumbers();
             } else if (inputNumber == 0) {
                 System.out.println("Good bye!");
             }
