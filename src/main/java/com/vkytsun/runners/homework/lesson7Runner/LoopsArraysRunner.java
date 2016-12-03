@@ -17,27 +17,39 @@ public class LoopsArraysRunner {
                     "6. Right side format of a multi-dimension array[8][5]." + "\n" +
                     "7. The sum of all the numbers entered by the user." + "\n" +
                     "0. Exit.");
+
             Scanner scanner = new Scanner(System.in);
-            int inputNumber = scanner.nextInt();
-            //scanner.next();
-            if (inputNumber == 1) {
-                EvenOddNumbersArray.evenNumbersArray();
-            } else if (inputNumber == 2) {
-                EvenOddNumbersArray.oddNumbersArray();
-            } else if (inputNumber == 3) {
-                RandomNumbersArray.randomNumberArray();
-            } else if (inputNumber == 4) {
-                RandomNumbersArray.randomNumberMinMaxArray();
-            } else if (inputNumber == 5) {
-                RandomNumbersArray.multiDimensionArray();
-            } else if (inputNumber == 6) {
-                RandomNumbersArray.rightSideFormatArray();
-            } else if (inputNumber == 7) {
-                RandomNumbersArray.addNumbers();
-            } else if (inputNumber == 0) {
-                System.out.println("Good bye!");
-            }
-            number = inputNumber;
+            int numberOfTask = scanner.nextInt();
+            //String inputString = scanner.nextLine();
+            //if (inputString.equals(numberOfTask)) {
+            //}
+            switch (numberOfTask) {
+                case 1:
+                    EvenOddNumbersArray.evenNumbersArray();
+                    break;
+                case 2:
+                    EvenOddNumbersArray.oddNumbersArray();
+                    break;
+                case 3:
+                    RandomNumbersArray.randomNumberArray();
+                    break;
+                case 4:
+                    RandomNumbersArray.randomNumberMinMaxArray();
+                    break;
+                case 5:
+                    RandomNumbersArray.multiDimensionArray();
+                    break;
+                case 6:
+                    RandomNumbersArray.rightSideFormatArray();
+                    break;
+                case 7:
+                    RandomNumbersArray.addNumbers();
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("You have made incorrect choice.");
+            } number = numberOfTask;
         } while (number != 0);
     }
 }
