@@ -24,7 +24,6 @@ public class SortingArray {
         }
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
-            //System.out.println("\nInput array" + array);
         }
       return array;
     }
@@ -44,6 +43,33 @@ public class SortingArray {
             System.out.print(array[i] + " ");
         }
         return array;
-
+    }
+    public static int[] selectionSortArray(int[] array) {
+        /*По очереди будем просматривать все подмножества элементов массива (0 - последний, 1-последний,
+        2-последний,...)*/
+        System.out.println("\nSort the array by selection sort: ");
+        for (int i = 0; i < array.length; i++) {
+            //int min = array[i]; // Предполагаемый минимальный элемент
+            int indexMin = i;  // Индекс минимального элемента
+            for (int j = i + 1; j < array.length; j++ ) {
+                // Если находим новый минимум, то запоминаем его индекс
+                if (array[j] < array[indexMin]) {
+                    //min = array [j];
+                    indexMin = j;
+                }
+            }
+            /*Проверяем, нашёлся ли элемент меньше, чем стоит на текущей позиции.
+            Если нашелся, то меняем значения местами*/
+            if (i != indexMin) {
+                int temp = array[i];
+                array[i] = array[indexMin];
+                array[indexMin] = temp;
+            }
+        }
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        return array;
     }
 }
+
