@@ -3,7 +3,7 @@ package com.vkytsun.app.homework.lesson9;
 
 public class ArrayInput {
     public static int[] inputArray() {
-        System.out.println("Array before selection sort: ");
+        System.out.println("Array before sort: ");
         int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
             int randomNumbers = (int) (Math.random() * 100 + 1);
