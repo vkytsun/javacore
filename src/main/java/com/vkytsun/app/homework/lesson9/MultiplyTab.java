@@ -9,7 +9,7 @@ package com.vkytsun.app.homework.lesson9;
  повторяющихся (примеры 2*3 и 3*2 и им подобные пары считать повторяющимися). */
 //not finished
 public class MultiplyTab {
-    public static int[][] multiplyTabArray() {
+     public static int[][] multiplyTabArray() {
         int[][] multTab = new int[9][9];
         System.out.println("Multiplication table: ");
         for (int i = 0; i < multTab.length; i++) {
