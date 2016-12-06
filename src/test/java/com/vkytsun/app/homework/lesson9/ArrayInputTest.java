@@ -10,7 +10,11 @@ public class ArrayInputTest {
     public void inputArray() throws Exception {
         int [] expectedArray = {12,22,1,4,66,88,90,8,19,82};
         int [] actualResult = ArrayInput.inputArray();
-        Assert.assertFalse(expectedArray == actualResult);
+        Assert.assertEquals(expectedArray.length, actualResult.length);
+    }
+    @Test
+    public void array() {
+
     }
 
 }
