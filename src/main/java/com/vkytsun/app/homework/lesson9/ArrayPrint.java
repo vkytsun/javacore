@@ -1,24 +1,28 @@
 package com.vkytsun.app.homework.lesson9;
 
 public class ArrayPrint {
-    public static void bubbleSortMaxToMinArray(int[] sortedMaxArray) {
+    public static int[] bubbleSortMaxToMinArray(int[] sortedMaxArray) {
         for (int i = 0; i < sortedMaxArray.length; i++) {
             System.out.print(sortedMaxArray[i] + " ");
         }
+        return sortedMaxArray;
     }
-    public static void bubbleSortMintoMaxArray(int[] sortedMinArray) {
+    public static int[] bubbleSortMintoMaxArray(int[] sortedMinArray) {
         for (int i = 0; i < sortedMinArray.length; i++) {
             System.out.print(sortedMinArray[i] + " ");
         }
+        return sortedMinArray;
     }
-    public static void selectionSortMinToMaxArray(int[] sortedMaxArray) {
+    public static int[] selectionSortMinToMaxArray(int[] sortedMaxArray) {
         for (int i = 0; i < sortedMaxArray.length; i++) {
             System.out.print(sortedMaxArray[i] + " ");
         }
+        return sortedMaxArray;
     }
-    public static void selectionSortMaxToMinArray(int[] sortedMinArray) {
+    public static int[] selectionSortMaxToMinArray(int[] sortedMinArray) {
         for (int i = 0; i < sortedMinArray.length; i++) {
             System.out.print(sortedMinArray[i] + " ");
         }
+        return sortedMinArray;
     }
 }
