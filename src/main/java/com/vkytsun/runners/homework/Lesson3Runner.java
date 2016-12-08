@@ -1,10 +1,8 @@
-package com.vkytsun.runners.homework.lesson3Runner;
+package com.vkytsun.runners.homework;
 
 import com.vkytsun.app.utils.convertors.PrimitiveConvertor;
 
-/**
- * Created by vkytsun on 10.11.16.
- */
+
 public class Lesson3Runner {
     public static void main(String[] args) {
         PrimitiveConvertor primitiveConvertor = new PrimitiveConvertor();

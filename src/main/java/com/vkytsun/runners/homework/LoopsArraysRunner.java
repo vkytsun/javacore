@@ -1,4 +1,4 @@
-package com.vkytsun.runners.homework.lesson7Runner;
+package com.vkytsun.runners.homework;
 
 import com.vkytsun.app.homework.lesson7.EvenOddNumbersArray;
 import com.vkytsun.app.homework.lesson7.RandomNumbersArray;
