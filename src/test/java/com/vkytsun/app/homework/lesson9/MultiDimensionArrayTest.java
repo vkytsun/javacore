@@ -18,7 +18,6 @@ public class MultiDimensionArrayTest {
             for (int j = 0; j < 8; j++) {
                 Assert.assertTrue(actualResult[i][j] > -99 && actualResult[i][j] < 99);
             }
-
         }
     }
     @Test
