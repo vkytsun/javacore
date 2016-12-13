@@ -6,17 +6,6 @@ import com.vkytsun.app.homework.lesson9.SortingArray;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * Написать класс, который будет считывать данные пользователя - набор цифр через точку с запятой
- * в ряд(такой себе ArrayParser class). После нажатия Enter - формируется массив данных и запрашивается
- * у пользователя направление сортировки (от большего к меньшему или наоборот). Результат сортировки должен быть
- * выведен на экран.
- Те, кто хочет усложнить это задание:
- можете сначала запрашивать у пользователя символ разделителя, и проверять при этом что он ввел именно один символ
- (разделителем может быть любой символ кроме символов дробной части - точка или запятая в зависимости от локали
- пользователя)
- определять тип данных по формату ввода (есть дробная часть - нет дробной части)
- */
 public class ArrayParser {
     public static void calcArrayParser() {
         System.out.println("Please, enter numbers, separated by semicolons in a row.");
@@ -45,8 +34,33 @@ public class ArrayParser {
         }
     }
     public static void extractLettersArray() {
-
-
+        System.out.println("Please, choose a separator:" + "\n" +
+                "Press 1 if you accept to use default separator." + "\n" +
+                "Press 2 if you want to change a separator.");
+        Scanner scanner = new Scanner(System.in);
+        String numberSeparator = scanner.nextLine();
+        String separtor = "";
+        if (numberSeparator.equals("1")) {
+            System.out.println("Default separator is a dot - " + "\"" + "."+ "\"");
+            separtor = "\\.";
+        } else {
+            System.out.println("Please, enter your separator.");
+            separtor = scanner.nextLine();
+            //Scanner  nextScanner = new Scanner(System.in);
+            //String yourSepartor = nextScanner.nextLine();
+            //String[] splittedInputSeparator = yourSepartor.split(separtor);
+        }
+        System.out.println("Please, enter symbols, separated by chosen separator.");
+        Scanner scan = new Scanner(System.in);
+        String inputSymbol = scan.nextLine();
+        String[] splittedArray = inputSymbol.split(separtor);
+        System.out.println("Created array by user:" + "\n" + Arrays.toString(splittedArray));
+        System.out.println("Extracted letters from array are: ");
+        for (int i = 0; i < splittedArray.length; i++) {
+            if (splittedArray[i].matches("^.*[a-zA-Z].+$")) { // help!!! Як правильно вивести букви алфавіту???
+                System.out.print(splittedArray[i] + " ");
+            }
+        }
     }
 }
 
