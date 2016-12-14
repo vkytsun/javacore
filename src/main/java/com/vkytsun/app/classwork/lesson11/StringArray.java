@@ -9,13 +9,14 @@ public class StringArray {
         Scanner scanner = new Scanner(System.in);
         //String inputString = scanner.nextLine();
         //String[] splittedStringArray = inputString.split(" ");
-       // for(String str :splittedStringArray){
+       // for(String str: splittedStringArray){
          //   System.out.println(str);
         //}
         String inputString = scanner.nextLine();
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < inputString.length(); i++){
-            stringBuilder.insert(i, inputString.charAt(i));
+            stringBuilder.insert(i, inputString.charAt(i)); // Insert substring after char
+            //insert(int offset, A) - преобразовать A в строку и вставить ее в указанную позицию;
             System.out.println(inputString.charAt(i));
         }
     }

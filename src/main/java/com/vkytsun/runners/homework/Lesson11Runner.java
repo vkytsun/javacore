@@ -62,6 +62,6 @@ public class Lesson11Runner {
                 default:
                     System.out.println("You have made incorrect choice.");
             } number = numberOfTask;
-        } while (number !=0);
+        } while (number != 0);
     }
 }

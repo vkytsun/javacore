@@ -5,6 +5,8 @@ import com.vkytsun.app.homework.lesson9.SortingArray;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ArrayParser {
     public static void calcArrayParser() {
@@ -55,12 +57,23 @@ public class ArrayParser {
         String inputSymbol = scan.nextLine();
         String[] splittedArray = inputSymbol.split(separtor);
         System.out.println("Created array by user:" + "\n" + Arrays.toString(splittedArray));
+        char[] charArray = new char[splittedArray.length];
         System.out.println("Extracted letters from array are: ");
         for (int i = 0; i < splittedArray.length; i++) {
-            if (splittedArray[i].matches("^.*[a-zA-Z].+$")) { // help!!! Як правильно вивести букви алфавіту???
-                System.out.print(splittedArray[i] + " ");
+            charArray[i] = splittedArray[i].charAt(0);
+            if ((charArray[i] > 64 && charArray[i] < 91) || (charArray[i] > 96 && charArray[i] < 123 )) {
+                System.out.print(charArray[i] + ", ");
             }
         }
+        /*Pattern p = Pattern.compile("[a-zA-Z]");
+        Matcher m = p.matcher("[a-zA-Z]");
+        boolean b = m.matches();
+        System.out.println("Extracted letters from array are: ");
+        for (int i = 0; i < splittedArray.length; i++) {
+            if (splittedArray[i].matches("^.*[a-zA-Z]")) { // help!!! Як правильно вивести букви алфавіту???
+                System.out.print(splittedArray[i] + " ");
+            }
+        }*/
     }
 }
 
