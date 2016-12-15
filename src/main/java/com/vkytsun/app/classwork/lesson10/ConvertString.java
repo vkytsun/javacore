@@ -1,8 +1,6 @@
 package com.vkytsun.app.classwork.lesson10;
 
-/**
- * Created by vkytsun on 06.12.16.
- */
+
 public class ConvertString {
     public static void main(String[] args) {
         double dot = 1000.02;
