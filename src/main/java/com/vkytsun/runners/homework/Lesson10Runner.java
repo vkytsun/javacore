@@ -8,21 +8,28 @@ import java.util.Scanner;
 public class Lesson10Runner {
     public static void generatePalindromeFirstMethod(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please, enter the string");
+        System.out.println("Please, enter a string to check if it is a palindrome");
         String palindrome = scanner.nextLine();
         StringPalindrome.palindromeFirstMethod(palindrome);
     }
     public static void generatePalindromeSecondMethod(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please, enter the string");
+        System.out.println("Please, enter a string to check if it is a palindrome");
         String palindrome = scanner.nextLine();
         StringPalindrome.palindromeSecondMethod(palindrome);
     }
     public static void generatePalindromeThirdMethod() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please, enter the string");
+        System.out.println("Please, enter a string to check if it is a palindrome");
         String palindrome = scanner.nextLine();
         StringPalindrome.palindromeThirdMethod(palindrome);
+    }
+    public static void generatePalindromeFourthMethod() {
+        String original, reverse = "";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please, enter a string to check if it is a palindrome");
+        original = scanner.nextLine();
+        StringPalindrome.palindromeFourthMethod(original,reverse);
     }
 
     public static void main(String[] args) {
@@ -32,6 +39,7 @@ public class Lesson10Runner {
                     "1. First Method." + "\n" +
                     "2. Second Method." + "\n" +
                     "3. Third Method." + "\n" +
+                    "4. Fourth Method." + "\n" +
                     "0. Exit.\n");
             Scanner scanner = new Scanner(System.in);
             int numberOfTask = scanner.nextInt();
@@ -44,6 +52,10 @@ public class Lesson10Runner {
                     break;
                 case 3:
                     generatePalindromeThirdMethod();
+                    break;
+                case 4:
+                    generatePalindromeFourthMethod();
+                    break;
                 case 0: break;
                 default:
                     System.out.println("You have made incorrect choice.");
