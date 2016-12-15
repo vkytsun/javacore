@@ -60,11 +60,14 @@ public class ArrayParser {
         char[] charArray = new char[splittedArray.length];
         System.out.println("Extracted letters from array are: ");
         for (int i = 0; i < splittedArray.length; i++) {
-            charArray[i] = splittedArray[i].charAt(0);
+            splittedArray[i].replace(([a-zA-Z]), "");
+            System.out.println();
+
+            /*charArray[i] = splittedArray[i].charAt(0);
             if ((charArray[i] > 64 && charArray[i] < 91) || (charArray[i] > 96 && charArray[i] < 123 )) {
                 System.out.print(charArray[i] + ", ");
             }
-        }
+        }*/
         /*Pattern p = Pattern.compile("[a-zA-Z]");
         Matcher m = p.matcher("[a-zA-Z]");
         boolean b = m.matches();
