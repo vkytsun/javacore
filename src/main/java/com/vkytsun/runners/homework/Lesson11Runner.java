@@ -8,24 +8,6 @@ import com.vkytsun.app.homework.lesson11.SplitStringByKeyword;
 import java.util.Scanner;
 
 public class Lesson11Runner {
-   /**public static void generateArrayParser() {
-       System.out.println("Please, enter numbers, separated by semicolons in a row.");
-       Scanner scanner = new Scanner(System.in);
-       String inputString = scanner.nextLine();
-       System.out.println("Please, enter numbers, separated by semicolons in a row.");
-       ArrayParser.calcArrayParser(inputString);
-    }
-    public static void sortArray(int[] intArray) {
-        Scanner scannerSort = new Scanner(System.in);
-        int sort = scannerSort.nextInt();
-        if (sort == 1) {
-            SortingArray.bubbleSortMinToMax(intArray);
-            ArrayPrint.bubbleSortMintoMaxArray(intArray);
-        }else if (sort == 2) {
-            SortingArray.bubbleSortMaxToMin(intArray);
-            ArrayPrint.bubbleSortMaxToMinArray(intArray);
-        }
-    }*/
    public static void generateString(){
        Scanner scanner = new Scanner(System.in);
        System.out.println("Please, enter string");

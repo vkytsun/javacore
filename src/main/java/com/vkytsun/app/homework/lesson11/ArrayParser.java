@@ -58,23 +58,27 @@ public class ArrayParser {
         String[] splittedArray = inputSymbol.split(separtor);
         System.out.println("Created array by user:" + "\n" + Arrays.toString(splittedArray));
         char[] charArray = new char[splittedArray.length];
-        System.out.println("Extracted letters from array are: ");
+        StringBuilder letterBuilder = new StringBuilder();
         for (int i = 0; i < splittedArray.length; i++) {
-            splittedArray[i].replace(([a-zA-Z]), "");
-            System.out.println();
-
-            /*charArray[i] = splittedArray[i].charAt(0);
-            if ((charArray[i] > 64 && charArray[i] < 91) || (charArray[i] > 96 && charArray[i] < 123 )) {
-                System.out.print(charArray[i] + ", ");
+            for (int j = 0; j < splittedArray[i].length(); j++) {
+                char letter = splittedArray[i].charAt(j);
+                if ((letter > 64) && (letter < 91) || (letter > 96) && (letter < 123)) {
+                    letterBuilder.append(letter + " ");
+                }
             }
-        }*/
-        /*Pattern p = Pattern.compile("[a-zA-Z]");
-        Matcher m = p.matcher("[a-zA-Z]");
+        }
+        System.out.println("Extracted letters from array are: ");
+        System.out.print(letterBuilder );
+
+        /*Pattern p = Pattern.compile("[a-zA-Z]+");
+        Matcher m = p.matcher(inputSymbol);
         boolean b = m.matches();
         System.out.println("Extracted letters from array are: ");
         for (int i = 0; i < splittedArray.length; i++) {
-            if (splittedArray[i].matches("^.*[a-zA-Z]")) { // help!!! Як правильно вивести букви алфавіту???
-                System.out.print(splittedArray[i] + " ");
+            if (splittedArray[i].matches("[a-zA-Z]+")) {
+                letterBuilder.append(letterMatch + " ");
+                System.out.println(letterBuilder + " ");
+
             }
         }*/
     }
