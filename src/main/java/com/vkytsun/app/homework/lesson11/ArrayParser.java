@@ -35,7 +35,6 @@ public class ArrayParser {
             ArrayPrint.bubbleSortMaxToMinArray(intArray);
         }
     }
-
     public static void extractLettersArray() {
         System.out.println("Please, choose a separator:" + "\n" +
                 "Press 1 if you accept to use default separator." + "\n" +
@@ -44,50 +43,42 @@ public class ArrayParser {
         String numberSeparator = scanner.nextLine();
         String separtor = "";
         if (numberSeparator.equals("1")) {
-            System.out.println("Default separator is a dot - " + "\"" + "." + "\"");
+            System.out.println("Default separator is a dot - " + "\"" + "."+ "\"");
             separtor = "\\.";
         } else {
             System.out.println("Please, enter your separator.");
             separtor = scanner.nextLine();
+            //Scanner  nextScanner = new Scanner(System.in);
+            //String yourSepartor = nextScanner.nextLine();
+            //String[] splittedInputSeparator = yourSepartor.split(separtor);
         }
         System.out.println("Please, enter symbols, separated by chosen separator.");
         Scanner scan = new Scanner(System.in);
         String inputSymbol = scan.nextLine();
         String[] splittedArray = inputSymbol.split(separtor);
         System.out.println("Created array by user:" + "\n" + Arrays.toString(splittedArray));
-        //char[] charArray = new char[splittedArray.length];
-        //String[] letters = stringBuilder.toString().split("[\\w+]");
-        StringBuilder sb = new StringBuilder();
+        char[] charArray = new char[splittedArray.length];
+        StringBuilder letterBuilder = new StringBuilder();
         for (int i = 0; i < splittedArray.length; i++) {
-
             for (int j = 0; j < splittedArray[i].length(); j++) {
-                char ch = splittedArray[i].charAt(j);
-
-                if  (((ch > 64) && (ch < 91)) || ((ch > 96) && (ch < 123 ))) {
-                    sb.append(ch);
-
+                char letter = splittedArray[i].charAt(j);
+                if ((letter > 64) && (letter < 91) || (letter > 96) && (letter < 123)) {
+                    letterBuilder.append(letter + " ");
                 }
             }
         }
         System.out.println("Extracted letters from array are: ");
-        System.out.print(sb);
+        System.out.print(letterBuilder );
 
-     /*   for (int i = 0; i < splittedArray.length; i++) {
-            charArray[i] = splittedArray[i].charAt(0);
-            if ((charArray[i] > 64 && charArray[i] < 91) || (charArray[i] > 96 && charArray[i] < 123 )) {
-                System.out.print(charArray[i] + ", ");
-            }
-        }*/
-        /*Pattern p = Pattern.compile("[a-zA-Z]");
-        Matcher m = p.matcher("[a-zA-Z]");
+        /*Pattern p = Pattern.compile("[a-zA-Z]+");
+        Matcher m = p.matcher(inputSymbol);
         boolean b = m.matches();
         System.out.println("Extracted letters from array are: ");
         for (int i = 0; i < splittedArray.length; i++) {
-            if (splittedArray[i].matches("^.*[a-zA-Z]")) { // help!!! Як правильно вивести букви алфавіту???
-                System.out.print(splittedArray[i] + " ");
+            if (splittedArray[i].matches("[a-zA-Z]+")) {
+                letterBuilder.append(letterMatch + " ");
+                System.out.println(letterBuilder + " ");
             }
         }*/
-
     }
 }
-
