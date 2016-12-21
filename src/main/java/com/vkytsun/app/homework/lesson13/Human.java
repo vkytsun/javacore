@@ -11,6 +11,10 @@ public class Human {
     private String name;
     private int age;
 
+    public Human(String name, int age) {
+        setAge(age);
+    }
+
     public String getName() {
         return name;
     }
@@ -20,11 +24,11 @@ public class Human {
     }
 
     public void setAge(int age) {
-        if (age < 1 || age > 120) {
-            System.out.println("Age invalid. The age of the human should be in a range from 1 to 120 years.");
+        if (age <= 1 || age >= 120) {
+            System.out.println("Age invalid. The age of the human should be in a range from 1 to 120 years.\n");
         } else {
             this.age = age;
-            System.out.println("New age setted" + age);
+            System.out.println("New age setted: " + age);
         }
     }
 }

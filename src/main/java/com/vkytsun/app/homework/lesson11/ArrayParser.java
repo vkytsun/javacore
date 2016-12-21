@@ -78,9 +78,7 @@ public class ArrayParser {
             if (splittedArray[i].matches("[a-zA-Z]+")) {
                 letterBuilder.append(letterMatch + " ");
                 System.out.println(letterBuilder + " ");
-
             }
         }*/
     }
 }
-
