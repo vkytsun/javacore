@@ -10,18 +10,20 @@ import java.util.regex.Pattern;
  только из латинских символов, тире, пробела и/или запятых. В противном случае выводится сообщение “Company name is invalid”.
  */
 public class WhiteCollar extends Human{
+    Pattern p = Pattern.compile("([a-zA-Z\\s,-])*");
     private String companyName;
 
     public WhiteCollar(String name, int age, String companyName) {
         super(name, age);
         this.companyName = companyName;
     }
-
-    public void setCompanyName(String companyName) {
-        Pattern p = Pattern.compile("([a-zA-Z\\s,-])*");
+    public boolean matcherCompanyName() {
         Matcher m = p.matcher(companyName);
-        if (m.matches() == true) {
-            this.companyName = companyName;
+        return m.matches(); //(m.matches() == true) simplified (m.matches())
+    }
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+        if (matcherCompanyName()) {
             System.out.println("Company name is: " + companyName);
         } else {
             System.out.println("Company name is invalid. Please enter correct name which consists of latin characters, dash, rules and/or commas. ");
