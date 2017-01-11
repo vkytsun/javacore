@@ -8,4 +8,9 @@ public abstract class Car1 {
     protected int openDoors() {
         return 3;
     }
+
+    public Car1(String name) {
+        this.name = name;
+    }
+
 }
