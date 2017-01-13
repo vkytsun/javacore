@@ -1,6 +1,5 @@
 package com.vkytsun.app.classwork.lesson16;
 
-
 public enum Holidays {
     NEW_YEAR(1,"January","New Year"),
     CHRISTMAS(7,"January","Christmas"),

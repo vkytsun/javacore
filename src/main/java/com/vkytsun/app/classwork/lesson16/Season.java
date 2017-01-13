@@ -1,6 +1,5 @@
 package com.vkytsun.app.classwork.lesson16;
 
-
 import java.util.Arrays;
 
 public enum Season {
