@@ -9,9 +9,9 @@ import java.util.Scanner;
 public class Lesson13Runner {
     public static void main(String[] args) {
         System.out.println("\n\nPlease, enter the number of the task to execute. Only words, not digits! " + "\n" +
-                "ONE. Create an instance of class Human." + "\n" +
-                "TWO. Create an instance of class WhiteCollar which extends from class Human." + "\n" +
-                "ZERO. Exit.");
+                "ONE - Create an instance of class Human." + "\n" +
+                "TWO -  Create an instance of class WhiteCollar which extends from class Human." + "\n" +
+                "ZERO - Exit.");
         try {
             Scanner scanner = new Scanner(System.in);
             String numberOfTask = scanner.nextLine();
