@@ -3,10 +3,13 @@ package com.vkytsun.app.classwork.lesson17;
 
 public class BoxPrinter<T> {
     private T val;
-    public BoxPrinter(T args) {
+    //T stands for "Type" - this is placeholder
+    public BoxPrinter(T args)
+    {
         val = args;
     }
-    public String toString() {
+    public String toString()
+    {
         return "{" + val + "}";
     }
 

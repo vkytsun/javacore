@@ -7,5 +7,7 @@ public class Test {
         Integer intValue1 = value1.getValue();
         BoxPrinter<String> value2 = new BoxPrinter<String>("hello");
         System.out.println(value2);
+        String stringValue2 = value2.getValue();
+        System.out.println(stringValue2);
     }
 }
