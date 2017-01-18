@@ -5,7 +5,7 @@ public abstract class Bicycle {
         System.out.println("Wroom!");
     }
 
-    public abstract int setSpeed (int speed);
+    public abstract void setSpeed ();
 
-    public abstract int setGear(int gear);
+    public abstract void setGear();
 }

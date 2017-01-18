@@ -9,8 +9,8 @@ public class Lesson15Runner {
     public static void main(String[] args) {
         Bicycle bicycle = new CustomBicycle();
         bicycle.ride();
-        bicycle.setGear(1);
-        bicycle.setSpeed(10);
+        bicycle.setGear();
+        bicycle.setSpeed();
         //CustomBicycle customBicycle = new CustomBicycle();
         //customBicycle.setSpeed(120);
         //customBicycle.setGear(3);
