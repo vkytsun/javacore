@@ -1,7 +1,5 @@
 package com.vkytsun.runners.homework;
 
-/**
- * Created by vkytsun on 18.01.17.
- */
 public enum ItemsOfMenu {
+    TASK1, TASK2, TASK3, TASK4, TASK5, TASK0;
 }

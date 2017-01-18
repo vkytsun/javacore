@@ -1,6 +1,6 @@
 package com.vkytsun.app.classwork.lesson17;
 
-public class ArraySorterGenerics<T> {
+public class ArraySorterGenericsClasswork<T> {
     public <T extends Comparable<T>, Number> T[] bubbleSortMigenToMax(T[] array) {
         T temp;
         System.out.println("\nBubble sort of the array from Min to Max number: ");
