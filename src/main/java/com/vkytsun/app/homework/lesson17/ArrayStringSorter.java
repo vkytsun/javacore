@@ -8,7 +8,7 @@ package com.vkytsun.app.homework.lesson17;
 
 import java.util.*;
 
-public class ArrayString {
+public class ArrayStringSorter {
     public static String sortString() {
         String word;
         System.out.println("Please, enter some words!");

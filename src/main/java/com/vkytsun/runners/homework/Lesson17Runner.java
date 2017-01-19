@@ -2,7 +2,7 @@ package com.vkytsun.runners.homework;
 
 
 import com.vkytsun.app.homework.lesson17.ArraySorterGenerics;
-import com.vkytsun.app.homework.lesson17.ArrayString;
+import com.vkytsun.app.homework.lesson17.ArrayStringSorter;
 
 import java.util.Scanner;
 
@@ -30,7 +30,7 @@ public class Lesson17Runner {
                     arraySorterGenerics.sort();
                     break;
                 case TASK2:
-                    ArrayString.sortString();
+                    ArrayStringSorter.sortString();
                     break;
                 case TASK0: break;
                 default:
