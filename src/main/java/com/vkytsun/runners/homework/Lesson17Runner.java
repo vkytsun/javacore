@@ -16,6 +16,8 @@ public class Lesson17Runner {
             Scanner scanner = new Scanner(System.in);
             String numberOfTask = scanner.nextLine();
             ItemsOfMenu itemsOfMenu = ItemsOfMenu.valueOf(numberOfTask);
+            //Items.convert(numberOfTask);
+            //itemsOfMenu.getValue();
 
             switch (itemsOfMenu) {
                 case TASK1:
@@ -34,7 +36,7 @@ public class Lesson17Runner {
                 default:
                     System.out.println("You have made incorrect choice.");
             }
-        } catch (IllegalArgumentException e ) {
+        } catch (NullPointerException e ) {
             System.out.println("Invalid number entered.");
         }
     }

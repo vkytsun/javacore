@@ -18,14 +18,14 @@ public class ArrayString {
             String enteredWord = scanner.nextLine();
             noDublicates.add(enteredWord);
             word = enteredWord;
-        } while (word.length() != 0);
-
-        TreeSet<String> enteredWordList = new TreeSet<>(new Comparator<String>() {
+        } while (!word.isEmpty());
+        /*TreeSet<String> enteredWordList = new TreeSet<>(new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
                 return o1.toString().compareTo(o2.toString());
             }
-        });
+        });*/
+        TreeSet<String> enteredWordList = new TreeSet<>();
         System.out.println("The list of strings are:");
         enteredWordList.addAll(noDublicates);
         for (Object wordlist : enteredWordList) {
