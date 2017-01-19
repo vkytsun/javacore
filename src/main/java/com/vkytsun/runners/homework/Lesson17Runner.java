@@ -2,6 +2,7 @@ package com.vkytsun.runners.homework;
 
 
 import com.vkytsun.app.homework.lesson17.ArraySorterGenerics;
+import com.vkytsun.app.homework.lesson17.ArrayString;
 
 import java.util.Scanner;
 
@@ -15,6 +16,7 @@ public class Lesson17Runner {
             Scanner scanner = new Scanner(System.in);
             String numberOfTask = scanner.nextLine();
             ItemsOfMenu itemsOfMenu = ItemsOfMenu.valueOf(numberOfTask);
+
             switch (itemsOfMenu) {
                 case TASK1:
                     Integer[] integersArray = {81, 22, 6, 1, 3,434, -23, 0, 12};
@@ -26,10 +28,11 @@ public class Lesson17Runner {
                     arraySorterGenerics.sort();
                     break;
                 case TASK2:
-
+                    ArrayString.sortString();
                     break;
-                case TASK0:
-                    break;
+                case TASK0: break;
+                default:
+                    System.out.println("You have made incorrect choice.");
             }
         } catch (IllegalArgumentException e ) {
             System.out.println("Invalid number entered.");

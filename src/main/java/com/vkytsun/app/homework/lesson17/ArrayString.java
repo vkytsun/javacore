@@ -6,26 +6,31 @@ package com.vkytsun.app.homework.lesson17;
 - сортирует список строк в алфавитном порядке, после чего
 - выводит на экран список строк в столбик.*/
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Scanner;
+import java.util.*;
 
 public class ArrayString {
-    public static void main(String[] args) {
+    public static String sortString() {
         String word;
-        String wordList;
         System.out.println("Please, enter some words!");
         HashSet noDublicates = new HashSet();
         Scanner scanner = new Scanner(System.in);
         do {
             String enteredWord = scanner.nextLine();
-            ArrayList<String> enteredWordList = new ArrayList<>();
-            enteredWordList.add(enteredWord);
             noDublicates.add(enteredWord);
             word = enteredWord;
         } while (word.length() != 0);
-        System.out.println(noDublicates);
 
+        TreeSet<String> enteredWordList = new TreeSet<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o1.toString().compareTo(o2.toString());
+            }
+        });
+        System.out.println("The list of strings are:");
+        enteredWordList.addAll(noDublicates);
+        for (Object wordlist : enteredWordList) {
+            System.out.println(wordlist);
+        }
+        return word;
     }
 }
