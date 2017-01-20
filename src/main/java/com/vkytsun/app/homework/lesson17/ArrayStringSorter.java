@@ -12,11 +12,13 @@ public class ArrayStringSorter {
     public static String sortString() {
         String word;
         System.out.println("Please, enter some words!");
-        HashSet noDublicates = new HashSet();
+        //HashSet noDublicates = new HashSet();
+        TreeSet<String> enteredWordList = new TreeSet<>();
         Scanner scanner = new Scanner(System.in);
         do {
             String enteredWord = scanner.nextLine();
-            noDublicates.add(enteredWord);
+            //noDublicates.add(enteredWord);
+            enteredWordList.add(enteredWord);
             word = enteredWord;
         } while (!word.isEmpty());
         /*TreeSet<String> enteredWordList = new TreeSet<>(new Comparator<String>() {
@@ -25,9 +27,8 @@ public class ArrayStringSorter {
                 return o1.toString().compareTo(o2.toString());
             }
         });*/
-        TreeSet<String> enteredWordList = new TreeSet<>();
         System.out.println("The list of strings are:");
-        enteredWordList.addAll(noDublicates);
+        //enteredWordList.addAll(noDublicates);
         for (Object wordlist : enteredWordList) {
             System.out.println(wordlist);
         }
