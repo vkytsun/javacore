@@ -9,7 +9,7 @@ public class Items {
             //System.out.println(items.name() + " : " + items.getValue());
             if (task.equals(items.getValue())) {
                 number = items;
-                //System.out.println(number);
+                break;
             }
         }
         return number;

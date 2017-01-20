@@ -10,20 +10,16 @@ import static com.vkytsun.runners.homework.ItemsOfMenu.TASK1;
 
 public class Lesson17Runner {
     public static void main(String[] args) {
-        //Items itemsOfMenu = null;
+        ItemsOfMenu itemsOfMenu;
         System.out.println("\n\nPlease, choose one of the tasks to execute. " + "\n" +
-                "Enter TASK1 - if want sort array using generics." + "\n" +
-                "Enter TASK2 - if want " + "\n" +
-                "Enter TASK0 - Exit.");
+                "Press 1 - if want sort array using generics." + "\n" +
+                "Press 2 - if want sort the list of strings in alphabetical order" + "\n" +
+                "Press 0 - Exit.");
         try {
             Scanner scanner = new Scanner(System.in);
             String numberOfTask = scanner.nextLine();
-            ItemsOfMenu itemsOfMenu = ItemsOfMenu.valueOf(numberOfTask);
-          //itemsOfMenu = Items.convert(numberOfTask);
-            //itemsOfMenu = Items.convert(numberOfTask);
-            //Items.convert(numberOfTask);
-            //itemsOfMenu.getValue();
-
+            //ItemsOfMenu itemsOfMenu = ItemsOfMenu.valueOf(numberOfTask);
+            itemsOfMenu = Items.convert(numberOfTask);
             switch (itemsOfMenu) {
                 case TASK1:
                     Integer[] integersArray = {81, 22, 6, 1, 3,434, -23, 0, 12};
